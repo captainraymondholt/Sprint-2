@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase&display=swap');
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+	font-family: 'Cormorant Unicase', serif;
+	font-weight: 400;
+  }
+
+  body {
+    height: 100vh;
+    background-image: url('paper.jpg');
+  }
+  .logo-text-1 {
+  position: absolute;
+  top: -8%;
+  left: 49.4%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  z-index: 1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  background-image: url('paper.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.tagline {
+	font-size: 20px;
+}
+.logo-text-2 {
+  position: absolute;
+  top: 15%;
+  left: 52%;
+  transform: translateX(-50%);
+  text-align: center;
+  font-size: 70px;
+  font-weight: bold;
+  z-index: 1;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  background-image: url('paper.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+  .logo {
+  position: absolute;
+  top: 12%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  }
+
+ .flipped-image {
+  transform: scaleX(-1);
+  width: 100px;
+  height: 100px;
+  z-index: 0;
+ }
+
+ .line-1 {
+  width: 30%;
+  margin: 0px auto;
+ }
+
+ .line-2 {
+  width: 30%;
+  height: 2px;
+  background-color: black;
+  margin: 5px auto;
+ }
+
+  #page-title {
+  position: absolute;
+  display: flex;
+  top: calc(50% - 120px);
+  left: 80px;
+  font-size: 180px;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typingAnimation 3s steps(20) infinite;
+  background-image: url('burn.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@keyframes typingAnimation {
+  from {
+    width: 0;
+  }
+  to {
+    width: 85%;
+  }
+}
+  nav {
+    position: absolute;
+    top: calc(50% - 250px); 
+    right: 100px;
+    height: 200px; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+
+  .menu span {
+    width: 100px; 
+    height: 100px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	background-color: #C41E3A;
+    background-image: url('stamp.png');
+	background-size: cover; 
+	background-repeat: no-repeat;
+	opacity: 200%;
+    border-radius: 50%;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    transform-origin: right center;
+    transition: transform 0.3s ease;
+  }
+  
+  .menu span:nth-child(1) {
+    transform: rotate(100deg);
+  }
+  .menu span:nth-child(1):hover {
+    background-color: #f4a460;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  }
+  
+  .menu span:nth-child(2) {
+    transform: rotate(35deg);
+  }
+  .menu span:nth-child(2):hover {
+    background-color: #f4a460;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  }
+ 
+  .menu span:nth-child(3) {
+    transform: rotate(0deg);
+  }
+  .menu span:nth-child(3):hover {
+    background-color: #f4a460;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  }
+  
+ .menu-circle span:hover {
+  transform: scale(1.5); 
+ }
+  .menu span:nth-child(4) {
+    transform: rotate(-35deg);
+  }
+  .menu span:nth-child(4):hover {
+    background-color: #f4a460;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  }
+
+  .menu span:nth-child(5) {
+    transform: rotate(-100deg);
+  }
+  .menu span:nth-child(5):hover {
+    background-color: #f4a460;
+	box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+  }
+ 
+.dropbtn {
+  position: fixed;
+  bottom: 0px;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-left: 20px solid #fad6a5;
+  border-right: 20px solid #fad6a5;
+  white-space: nowrap;
+  border-top: 30px solid black;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.dropdown-content {
+  background-image: url("dropdown.png");
+  background-size: cover; 
+  font-family: 'Dancing Script', cursive;
+  background-repeat: no-repeat;
+  padding: -0.002px 10px 40px;
+  position: absolute;
+  bottom: 0;
+  left: 38.5%;
+  width: 25%;
+  height: 0;
+  transition: height 0.009s;
+  overflow: hidden;
+}
+
+.show {
+  height: 77vh;
+  top: 150px;
+  font-family: 'Dancing Script', cursive;
+  padding: 50px 40px 10px 40px;
+}

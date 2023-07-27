@@ -1,0 +1,68 @@
+<!--HTML Code for Menu Page - (START) July 7, 2023-->
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Sherlock Files | Homepage </title>
+  <link rel="stylesheet" href="menu-style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+<style>
+	body {
+	overflow: hidden;
+	}
+</style>
+<script src="script.js"></script>
+<div class="logo">
+	<div class="logo-text-1">S</div>
+	<div class="logo-text-2">H</div>
+	<div><img src="sherlock.png" class="flipped-image"></div>
+	<div><img src="sherline.png" class="line-1"></div>
+	<div class="tagline">"Be Part of the Enigma..."</div>
+	<div class="line-2"></div>
+</div>
+<span id="page-title">Sherlock Files<br></span>
+<nav>
+    <div class="menu">
+      <span class="menu-circle">
+        <a href="http://localhost/sherlocked/frontend/adonis_tictactoeCode/choose.html"><img src="game.png" width="30px" height="30px"></a>
+      </span>
+	  <span class="menu-circle">
+        <a href="http://localhost/sherlocked/frontend/photo.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZBJREFUSEvd171rFEEUAPDfgdqmirZKqhg/G5EUYuJHukA6LVOkDyZgGf8CjZ2lhYVdBCFFIEQ70RiChVaKXSwCqRSxCPJgFtbN3uZyN7kDp7rb3Xm/mdnHzNuWAbXWgFzt4FO4hauI3922fWxitRqgDr6AdZzuVqvp9xL3y9fr4E+4mBEtQo3gW/GnCp/Bj3TzMRZ6HMBNbKQYE3jTDr6Bt+nmZKlTt37HcNsHcR238Rsr+NrBaHqGh7CNswl7ivl+wJFskXRF+4Br/YDPpUS7h108w3KCH6a8eFczkJ6Xuoh5F39K2XkJH7GDUfys4NngiBvAl7SjbWEsYc8xe1xwoIFdxhwWK9A0XpeuZZnxibTvBvoZ52ve6V5agVj6aFngJTzqIJPXMJUTHj/CSfUev3LNuIPJHngky1L//3A3M2zq03gslt/JwOA49l5k1GNn+17Eq1Yg5UJgBq8ywv+Eaip9nuBBv+BwjqvYa0yugOO0iQJtOPNsD4XDiyL+Dq7gZKYBNCZXJuPwMAP7dvoL2HZ0H7yXOIUAAAAASUVORK5CYII="/></a>
+      </span>
+	  <span class="menu-circle">
+        <a href="http://localhost/sherlocked/frontend/collection.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAPtJREFUSEvtlrEKwkAMhr/6JA6C4iT4AOrqILrp5qM56qKbjupsVxEEwScRCVgpZ3vmekIt3E3t9ZIvCX+TiyhpRSVx0YDrwNwxwAVwt9lowH1g7wgeAIfKgh2T1R3XlFrnyfGUDSyCEmH5LBGYCO1j2cAijp4PFTgCIs5qgD2TtZv/lbgkmCHQBWqeaT+AGNiafrIy3gBjT6BpvgRm6U0T3AbOP4Ym7hrALXkxwem+/LXfKgLM9RfAodTWYR7ElVGB8Du9NWM2kBZwUYimyJEmcM1rmbK/BiZFPFtsVsDUNiTkm1RhBHRezz4xyFg8ATvNWPQBqW1Lu4E8AYC9Qh8shIQCAAAAAElFTkSuQmCC"/></a>
+      </span>
+	  <span class="menu-circle">
+        <a href="http://localhost/sherlocked/frontend/about.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAgZJREFUSEvt1kuozVEUx/HP9SoTUsREHoUiQwaUPIooMvCYMmCgpAwQeVySx0xmZGLmMZEyUJ7FABPJIyVhJCIZkHcr69Sx3fP4n5xu6u7R6ey9f9+119r7t/49+mn09BNXp+DZWJBBX8OdqgfoBHwY2wvQEeyoAq8KXoMzDQBrcbZdeFXwOaxqIH4eq7sFvoKFDcSvYlG3wH3Vt8aqVOeqqR6LuxhfnOwVZuF1t04culNxEMsScgm78LRdaKyrP/FcXMQoPMdLfEbU7gae4W0L8TGYnG98MQZhAibiPZbjVgnejf0thB/jFE7jTa4dh3VYn9loJrEHB0rwPuzNXccwPaONeg4v1L7jAoZhKQYX858yYy8QwW7J+V4E549U14PLSxcWuTLf8JQGR3qCeMsR0L1izc9OwfU68Y63YUnd5YqndLNJjv8JOPTnI5pDjGgW11vcjQFw25erzORAqv//y7UZYQjh2eE+34oit6rxkPTnSZiG480MZGd2nfIihT0+zHZ4OxvJjOIdP8IKzMn2GHYbDaIcwThUWmZEdwJDMRIfEFZZ+nTsiyxE14kRvbjszzVgGMf91PqCDbm35edtBBFNYB5mpkvFf32NEA43e5BOdhlfGzla1S+Q0diErZmV0H2HoziZv1u45+/pquCa6AhsxI8EfmyLVreoU3BVzl/r+w38C3Obgx9NhrTKAAAAAElFTkSuQmCC"/></a>
+      </span>
+      <span class="menu-circle">
+        <a href="http://localhost/sherlocked/db_backend/contactForm.php"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAZtJREFUSEvF1z1rFFEUxvHfBtTYBU0VgqQWDNgIYjBVvoGQStKkCLHSNkUi2GsnYmNCSJdUsbGxEOwsJIQQUgkRxDfQL6AcuAvrMrMzd3bXObCwy849//Oct73b0ZJ1WuIaBL6Du7g0ouB+Yhu/wl8ZeAubIwL2ulnH80Hg77g6BvBjhKhSxX/GAA2XIwEf4BDfcBOPMFUR8NDgh3jWB5nGR8wMgBeC5xCvsLcDDh9hvuT7+9jJBdft5OjK6M4iC7WfxwV+gbUS51fwIxdcN9XHuIGizr+N97ng3uerxik6+Gkf4DLeYCEXXFdx1+8+XuNLysADXGsyTnWba5jdUjhOrYHrpvoEe/iAeB97/XpK9yKWcbEkLY02129EHXcrch11jiUSQfRb9ub6mn6bT2sWeAKvEJus17JrfA/RxTk2iTPM9hzKAp+nMama7aKgNvCkClzWXO9SmnPUdp9dSkul+zmruT6lejUBh5iVKsU5K7NJEHEmS3FTSNG5SnBrl72XWB2l1OSr8np7IXXyrf99oR+D2H9dtvbf6S9hb10fVEcSOAAAAABJRU5ErkJggg=="/></a>
+      </span>
+    </div>
+</nav>
+	 <div class="dropdown">
+	  <button class="dropbtn" onclick="toggleDropdown()"><box-icon name='chevrons-down'></box-icon></button>
+	  <div class="dropdown-content" id="dropdownContent">
+		  My Dearest,<br><br>
+		  I extend my heartfelt gratitude for gracing my virtual abode with your presence. Your unwavering admiration and ardor in preserving 
+		  the echoes of my memory and the perpetuity of my adventures leave me humbled.<br>
+		  It is through the devotion of esteemed individuals such as yourself that the enigma of Sherlock Holmes finds solace 
+		  in time's inexorable march. As the echoes of our encounters resonate across the annals of history, your dedication ensures 
+		  that the thrill of the chase and the pursuit of truth remain eternally alive.<br>
+		  Together, we weave an enduring tapestry of mystery, one that transcends the confines of temporal boundaries. Your loyalty enriches my legacy 
+		  and warms the heart of this ever-observant detective.<br><br>
+		  With utmost appreciation and in anticipation of our future rendezvous, I remain,
+		  <br><br>Yours deducingly,<br>SH
+	  </div>
+	</div>
+ <script>
+	function toggleDropdown() {
+	  var dropdownContent = document.getElementById("dropdownContent");
+	  dropdownContent.classList.toggle("show");
+	}
+ </script>
+</body>
+</html>

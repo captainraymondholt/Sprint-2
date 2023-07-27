@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Who's Who?</title>
+  <style>
+	body{
+	font-family: "Fantasy", Papyrus;
+	height: 500%;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	overflow: hidden;
+	}
+	  .logo-text-1 {
+		  position: absolute;
+		  top: -5%;
+		  left: 47%;
+		  transform: translateX(-50%);
+		  text-align: center;
+		  font-size: 30px;
+		  font-weight: bold;
+		  z-index: 1;
+		  background-clip: text;
+		  -webkit-background-clip: text;
+		  -webkit-text-fill-color: transparent;
+		  white-space: nowrap;
+		  background-image: url('https://cdn.wallpapersafari.com/60/62/wTHE41.jpg');
+		  background-size: cover;
+		  background-position: center;
+		  background-repeat: no-repeat;
+	}
+	.tagline {
+		font-size: 20px;
+	}
+	.logo-text-2 {
+	  position: absolute;
+	  top: 25%;
+	  left: 70%;
+	  transform: translateX(-50%);
+	  text-align: center;
+	  font-size: 30px;
+	  font-weight: bold;
+	  z-index: 1;
+	  background-clip: text;
+	  -webkit-background-clip: text;
+	  -webkit-text-fill-color: transparent;
+	  white-space: nowrap;
+	  background-image: url('https://cdn.wallpapersafari.com/60/62/wTHE41.jpg');
+	  background-size: cover;
+	  background-position: center;
+	  background-repeat: no-repeat;
+	}
+	.logo {
+	  position: absolute;
+	  top: 7%;
+	  left: 10%;
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+	}
+	.flipped-image {
+	  transform: scaleX(-1);
+	  width: 70px;
+	  height: 70px;
+	  z-index: 0;
+	}
+	.menu {
+	  font-size: 15px;
+	  text-align: right;
+	  background-color: none;
+	}
+
+	.menu1 {
+	  list-style: none;
+	  display: inline-block;
+	}
+
+	.menu1 li {
+	  display: inline-block;
+	  margin: 0 10px;
+	}
+
+	.menu1 li a {
+	  text-decoration: none;
+	  color: white;
+	}
+	.menu1 li a:hover {
+	  color: yellow;
+	}
+	.one {
+	  float: left;
+	  width: 33.33%;
+	  padding-bottom: 5px;
+	}
+	.two {
+	  float: right;
+	  width: 33.33%;
+	  padding-top: 0px;
+	}
+	.mother{
+		color: white;
+		font-size: 15px;
+		cursor: grab;
+	}
+	.mother:after {
+	  content: "";
+	  display: table;
+	  clear: both;
+	}
+    .arrow-link {
+        display: inline-block;
+        font-size: 17px;
+        margin-block-start: 0px;
+        margin-block-end: 5px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+        font-family: "Fantasy", Papyrus;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;
+    }
+    .arrow-link.left {
+      left: 10px;
+      padding-left: 0;
+    }
+
+    .arrow-link.right {
+      right: 10px;
+      padding-right: 0;
+    }
+
+  </style>
+</head>
+<body style="background-image: url('https://cdn.wallpapersafari.com/60/62/wTHE41.jpg')">
+  <a href="http://localhost/sherlocked/frontend/menu.html">
+    <div class="logo">
+      <div class="logo-text-1">S</div>
+      <div class="logo-text-2">H</div>
+      <div><img src="sherlock.png" class="flipped-image"></div>
+    </div>
+  </a>
+  <div class="menu">
+    <ul class="menu1">
+      <li><a href="http://localhost/sherlocked/frontend/adonis_tictactoeCode/choose.html">Game Centre</a></li>
+      <li><a href="http://localhost/sherlocked/frontend/photo.html">Photo Gallery</a></li>
+      <li><a href="http://localhost/sherlocked/frontend/about.html">About the Site</a></li>
+      <li ><a href="http://localhost/sherlocked/db_backend/contactForm.php">Contact</a></li>
+    </ul>
+  </div>
+
+  <center>
+    <h1 style="color:red; font-size:50px; margin: 0;">Who's Who?</h1>
+    <p><h4 style="color:white; padding-top:0px;">Below are the characters in Sir Arthur Conan Doyle's "Sherlock Holmes".<br>
+    Click every photo to know more about the characters.</h4></p>
+  </center>
+
+  <div class="mother">
+    <center>
+      <div class="ones">
+        <a href="https://bakerstreet.fandom.com/wiki/Sherlock_Holmes">
+          <img src="https://adoniseystheticahahahome.files.wordpress.com/2020/11/sherlock.jpg.jpg" alt="Sherlock Holmes" width="100px">
+        </a>
+		<p>Sherlock Holmes</p>
+      </div>
+      <div class="one">
+        <a href="https://bakerstreet.fandom.com/wiki/John_Watson">
+          <img src="https://adoniseystheticahahahome.files.wordpress.com/2020/11/john.jpg.jpg?w=665&zoom=2" alt="John Watson" width="100px">
+        </a>
+        <p>Dr. John Watson</p>
+      </div>
+      <div class="one">
+        <a href="https://bakerstreet.fandom.com/wiki/James_Moriarty">
+          <img src="https://adoniseystheticahahahome.files.wordpress.com/2020/11/moriarty.jpg.jpg" alt="Moriarty" width="100px">
+        </a>
+        <p>Professor James Moriarty</p>
+      </div>
+      <div class="one">
+        <a href="https://bakerstreet.fandom.com/wiki/Irene_Adler">
+          <img src="https://adoniseystheticahahahome.files.wordpress.com/2020/11/irene.jpg.jpg" alt="Irene Adler" width="100px">
+        </a>
+        <p>Irene Adler</p>
+      </div>
+      <div class="two">
+        <a href="https://bakerstreet.fandom.com/wiki/Martha_Louise_Hudson">
+          <img src="https://adoniseystheticahahahome.files.wordpress.com/2020/11/hudson.jpg.jpg?w=289" alt="Mrs. Hudson" width="100px">
+        </a>
+        <p>Mrs. Martha Louise Hudson</p>
+      </div>
+      <div class="two">
+        <a href="https://bakerstreet.fandom.com/wiki/Mycroft_Holmes">
+          <img src="https://adoniseystheticahahahome.files.wordpress.com/2020/11/mycroft.jpg.jpg" alt="Mycroft Holmes" width="100px">
+        </a>
+        <p>Mycroft Holmes</p>
+      </div>
+      <div class="two">
+        <a href="https://bakerstreet.fandom.com/wiki/Inspector_Lestrade">
+          <img src="https://adoniseystheticahahahome.files.wordpress.com/2020/11/lestrade.jpg.jpg?w=300" alt="Greg Lestrade" width="100px">
+        </a>
+        <p>Inspector Greg Lestrade</p>
+      </div>
+    </center>
+  </div>
+
+  <center>
+    <a class="arrow-link left" href="collection.html"><img src="left-arrow.png" width="25" height="25"></a>
+    <a class="arrow-link right" href="record.html"><img src="right-arrow.png" width="25" height="25"></a>
+  </center>
+</body>
+</html>
+

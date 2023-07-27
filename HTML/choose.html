@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<!-- First Page -->
+<head>
+	<title>The Great Game</title>
+    <link rel="stylesheet" href="choose.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase&display=swap');
+        body {
+            font-family: 'Cormorant Unicase', serif;
+        }
+        .logo-text-1 {
+            position: absolute;
+            top: -8%;
+            left: 49.4%;
+            transform: translateX(-50%);
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            z-index: 1;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            white-space: nowrap;
+            background-image: url('versus.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .tagline {
+            font-size: 15px;
+            color: rgb(177, 132, 132);
+        }
+        .logo-text-2 {
+            position: absolute;
+            top: 15%;
+            left: 52%;
+            transform: translateX(-50%);
+            text-align: center;
+            font-size: 50px;
+            font-weight: bold;
+            z-index: 1;
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            white-space: nowrap;
+            background-image: url('versus.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .logo {
+            position: absolute;
+            top: 12%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .flipped-image {
+            transform: scaleX(-1);
+            width: 80px;
+            height: 80px;
+            z-index: 0;
+        }
+
+        .line-1 {
+            width: 30%;
+            margin: 0px auto;
+        }
+
+        .line-2 {
+            width: 30%;
+            height: 2px;
+            background-color: black;
+            margin: 5px auto;
+        }
+        .menu {
+            font-size: 20px;
+            text-align: right;
+            padding-right: 5px;
+            top: 12%;
+            background-color: none;
+        }
+        .menu1 {
+            display: block; 
+            list-style-type: none; 
+        }
+        .menu1 li {
+            display: block;
+            padding: 3px 0;
+        }
+        .menu1 li a {
+            text-decoration: none;
+            color: rgb(244, 236, 236);
+        }
+        .menu1 li a:hover {
+            font-size: 25px;
+            text-decoration: none;
+            color: rgb(237, 176, 64);
+        }
+    </style>
+</head>
+<body>
+    <!--change file location-->
+    <a href="http://localhost/sherlocked/frontend/menu.html">
+        <div class="logo">
+            <div class="logo-text-1">S</div>
+            <div class="logo-text-2">H</div>
+            <div><img src="sherlock.png" class="flipped-image"></div>
+            <div><img src="sherline.png" class="line-1"></div>
+            <div class="tagline">"The game is afoot!"</div>
+            <div class="line-2"></div>
+        </div>
+    </a>
+    <div class="menu">
+        <ul class="menu1">
+          <li><a href="http://localhost/sherlocked/frontend/photo.html">Photo Gallery</a></li>
+          <li><a href="http://localhost/sherlocked/frontend/collection.html">Collection</a></li>
+          <li><a href="http://localhost/sherlocked/frontend/about.html">About the Site</a></li>
+          <li ><a href="http://localhost/sherlocked/db_backend/contactForm.php">Contact</a></li>
+        </ul>
+    </div>
+	<div class="selectPlayer">
+        <div class="selector">
+          <div class="playerQuery"><br>CHOOSE YOUR PLAYER<br><br></div>
+            	<div class="playerChoice">
+            	<button onclick="location.href='playerO.html'" class="O"><b>O</b></button>
+                <button onclick="location.href='playerX.html'" class="X"><b>X</b></button>
+                </div>
+        </div>
+    </div>
+</body>
+</html>

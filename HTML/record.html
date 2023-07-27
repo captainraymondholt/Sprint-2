@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>You are browsing Sherlock's Videos...</title>
+  <style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Unicase&display=swap');
+  * {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: 'Cormorant Unicase', serif;
+	  }
+
+	  body {
+		height: 100vh;
+		background-color: #ba8759;
+		overflow: hidden;
+		font-size: 18px;
+	  }
+   .logo-text-1 {
+	  position: absolute;
+	  top: -5%;
+	  left: 44%;
+	  transform: translateX(-50%);
+	  text-align: center;
+	  font-size: 40px;
+	  font-weight: bold;
+	  z-index: 1;
+	  color: black;
+	}
+	.logo-text-2 {
+	  position: absolute;
+	  top: 25%;
+	  left: 68%;
+	  transform: translateX(-50%);
+	  text-align: center;
+	  font-size: 40px;
+	  font-weight: bold;
+	  z-index: 1;
+	  color: black;
+	}
+	  .logo {
+	  position: absolute;
+	  top: 7%;
+	  right: 0;
+	  transform: translate(-50%, -50%);
+	  text-align: center;
+	  }
+	 
+	 .flipped-image {
+	  width: 70px;
+	  height: 70px;
+	  z-index: 0;
+	 }
+	 .menu {
+	  font-size: 20px;
+	  text-align: center;
+	  padding: 25px 0;
+	  background-color: none;
+	}
+
+	.menu1 {
+	  list-style: none;
+	  display: inline-block;
+	}
+
+	.menu1 li {
+	  display: inline-block;
+	  margin: 0 10px;
+	}
+
+	.menu1 li a {
+	  text-decoration: none;
+	  color: white;
+	}
+	.menu1 li:hover {
+	  transform: scale(1.1);
+	  border-bottom: 2px solid yellow;
+	}
+	.vid-gag{
+		color: transparent;
+		background-image: url(https://clipart.world/wp-content/uploads/2022/09/Cassette-Tape-Clipart-Free-Image.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-style: outset;
+		border-radius: 5px;
+		width: 100px;
+		height:100px;
+	}
+	.vid-gag:hover{
+		background-image: url(hand.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		font-size: 30px;
+		font-weight: bold;
+		color: red;
+		cursor: grab;
+	} 
+	hr{
+		width: 40%;
+		border-top: 5px solid black;
+	}
+	.check{
+		margin-block-start: 0px;
+		margin-inline-start: 0px;
+		margin-inline-end: 0px;
+		padding-inline-start: 0px;
+		font-size: 30px;
+		text-align: right;
+		right: 20px;
+		position:absolute;
+		color: orange;
+		animation: blinker 0.5s infinite;
+	}
+	  @keyframes blinker{ 
+		50% {
+				opacity: 5%;
+			}
+	}
+	.arrow-link {
+        display: inline-block;
+        font-size: 17px;
+        margin-block-start: 0px;
+        margin-block-end: 5px;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+        padding-inline-start: 0px;
+        font-family: "Fantasy", Papyrus;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        color: white;
+        text-align: center;
+        line-height: 50px;
+        cursor: pointer;
+    }
+    .arrow-link.left {
+      left: 10px;
+      padding-left: 0;
+    }
+
+    .arrow-link.right {
+      right: 10px;
+      padding-right: 0;
+    }
+  </style>
+  
+</head>
+<center>
+  <body style="background-image: url(https://cdn.wallpapersafari.com/4/13/PWdS8E.jpg)">
+	<a href="http://localhost/sherlocked/frontend/menu.html">
+		<div class="logo">
+			<div class="logo-text-1">S</div>
+			<div class="logo-text-2">H</div>
+			<div><img src="https://maximumescape.com/media/quest_images/img-1505872939731-9962.png" class="flipped-image"></div>
+		</div>
+	</a>
+	<div class="menu">
+		<ul class="menu1">
+			<li><a href="http://localhost/sherlocked/frontend/adonis_tictactoeCode/choose.html">Game Centre</a></li>
+			<li><a href="http://localhost/sherlocked/frontend/photo.html">Photo Booth</a></li>
+			<li><a href="http://localhost/sherlocked/frontend/about.html">About the Site</a></li>
+			<li ><a href="http://localhost/sherlocked/db_backend/contactForm.php">Contact</a></li>
+		</ul>
+	</div>
+  <h1 style="color:white">Sherlock's Records</h1>
+    <p style="color: white">Watch Sherlock-related videos from the categories below!</p><br>
+    <div class="gag" style="color: white; text-shadow: -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black, 1px 1px 2px black;">
+	<h2>LAUGHS</h2>Experience a world of laughter featuring behind-the-scenes and series bloopers!<br>
+      <button class="vid-gag" onclick="location.href='https://youtu.be/9xoDbeUseic'">L</button>
+	  <button class="vid-gag" onclick="location.href='https://www.youtube.com/watch?v=WhsJyfBtF1k'">A</button>
+	  <button class="vid-gag" onclick="location.href='https://www.youtube.com/watch?v=91lyvq0VPio'">U</button>
+	  <button class="vid-gag" onclick="location.href='https://www.youtube.com/watch?v=rdPGLZ_JazU'">G</button>
+	  <button class="vid-gag" onclick="location.href='https://youtu.be/WyRGoAYT0DU'">H</button>
+	  <button class="vid-gag" onclick="location.href='https://youtu.be/Ak5I2Mp2uYM'">S</button>
+     </div>
+	 <hr><br>
+    <div class="quote" style="color: white; text-shadow: -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black, 1px 1px 2px black;">
+	<h2>QUOTES</h2>Feeling lost? Check out some of Sherlock's most powerful quotes and free that detective in you!<br>
+		<button class="vid-gag" onclick="location.href='https://youtu.be/nfer7NBhYz4'">Q</button>
+		<button class="vid-gag" onclick="location.href='https://www.youtube.com/watch?v=PPrQDB7QTNU'">U</button>
+		<button class="vid-gag" onclick="location.href='https://www.youtube.com/watch?v=UVgazu6280k'">O</button>
+		<button class="vid-gag" onclick="location.href='https://www.youtube.com/watch?v=TnG-GTw5lLk'">T</button>
+		<button class="vid-gag" onclick="location.href='https://www.youtube.com/watch?v=wvJHpxr9JE8'">E</button>
+		<button class="vid-gag" onclick="location.href='https://www.youtube.com/watch?v=Xj903aPKDqM'">S</button>
+      </div>
+	  <hr><br>
+    <div class="trivia" style="color: white; text-shadow: -1px -1px 2px black, 1px -1px 2px black, -1px 1px 2px black, 1px 1px 2px black;">
+	<h2>TRIVIA</h2>Want to refresh that Sherlockian knowledge or learn new facts about our favorite detective?<br>Join in the quizzes below and prove
+	that your memory palace is just as good as Sherlock's!<br>
+	<button class="vid-gag" onclick="location.href='https://www.youtube.com/watch?v=Q7sLeMIa6G8'">T</button>
+	<button class="vid-gag" onclick="location.href='https://www.youtube.com/watch?v=Pwqv5xByc8A'">R</button>
+	<button class="vid-gag" onclick="location.href='https://www.youtube.com/watch?v=ETLnIlz6YIQ'">I</button>
+	<button class="vid-gag" onclick="location.href='https://www.youtube.com/watch?v=BtALiOI0Vq0'">V</button>
+	<button class="vid-gag" onclick="location.href='https://www.youtube.com/watch?v=-qavREz6els'">I</button>
+	<button class="vid-gag" onclick="location.href='https://www.youtube.com/watch?v=I8992A5oAWM'">A</button>
+      </div>
+	 <hr><br>
+ </center>
+	 <center>
+		<a class="arrow-link left" href="collection.html"><img src="left-arrow.png" width="25" height="25"></a>
+		<a class="arrow-link right" href="who.html"><img src="right-arrow.png" width="25" height="25"></a>
+	</center>
+</body>
+</html>

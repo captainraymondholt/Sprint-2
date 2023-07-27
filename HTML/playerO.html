@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Playing...</title>
+    <link rel="stylesheet" href="playerO.css">
+</head>
+<body>
+    <!-- players' grid -->
+    
+    <div class="gameGrid">
+		<p style="color: teal; font-size: 35px; margin-bottom: 5px">Game Status:</p>
+		<p id="playerTurn"><hr style="width:30%; color: lightblue"></p>
+		<br><br>
+          <section>
+              <input type="text" style="color:transparent; font-size:40px; background-size:contain; 
+			  background-repeat:no-repeat" id="gridA" onclick="clickedA(); gameChecker();">
+              <input type="text" style="color:transparent; font-size:40px; background-size:contain; 
+			  background-repeat:no-repeat" id="gridB" onclick="clickedB(); gameChecker();">
+              <input type="text" style="color:transparent; font-size:40px; background-size:contain; 
+			  background-repeat:no-repeat" id="gridC" onclick="clickedC(); gameChecker();">
+          </section>
+          <section>
+              <input type="text" style="color:transparent; font-size:40px; background-size:contain; 
+			  background-repeat:no-repeat" id="gridD" onclick="clickedD(); gameChecker();">
+              <input type="text" style="color:transparent; font-size:40px; background-size:contain; 
+			  background-repeat:no-repeat" id="gridE" onclick="clickedE(); gameChecker();">
+              <input type="text" style="color:transparent; font-size:40px; background-size:contain; 
+			  background-repeat:no-repeat" id="gridF" onclick="clickedF(); gameChecker();">
+          </section>
+          <section>
+              <input type="text" style="color:transparent; font-size:40px; background-size:contain; 
+			  background-repeat:no-repeat" id="gridG" onclick="clickedG(); gameChecker();">
+              <input type="text" style="color:transparent; font-size:40px; background-size:contain; 
+			  background-repeat:no-repeat" id="gridH" onclick="clickedH(); gameChecker();">
+              <input type="text" style="color:transparent; font-size:40px; background-size:contain; 
+			  background-repeat:no-repeat" id="gridI" onclick="clickedI(); gameChecker();">
+          </section>
+		<br><br><br>
+		<!-- Button to reset game -->
+			<button id="btn1" onclick="gameReset()">
+				RESET
+			</button>
+			<button id="btn2" onclick="location.href='choose.html'">
+				SWITCH PLAYER
+			</button>
+		<br><br>
+    </div>
+	
+    <script src="playerO.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+body{
+	font-family:Trebuchet MS;
+	background-image: url(holmes.jpg);
+	cursor: grab;
+	font-size: 50px;
+	color: white;
+	overflow: hidden;
+}
+.gameGrid{
+	justify-content: center;
+  	text-align: center;
+  	margin: 90px;
+  	font-size:20px;
+}
+#playerTurn{
+	border-style: ridge;
+	border-radius: 15px;
+	background-color: rgb(39, 39, 39);
+	justify-content: center;
+	font-size: 30px;
+	color: whitesmoke;
+    width: 250px;
+    height: 35px;
+  	margin: auto;
+	padding-top: 5px;
+  	padding-bottom: 0px;
+	animation: blinker 1s infinite;
+}
+  @keyframes blinker{ 
+	50% {
+      		opacity: 0.75%;
+    	}
+}
+.gameGrid section{
+	display: flex;
+  	justify-content: center;
+  	text-align: center;
+}
+
+.gameGrid section input{
+	font-weight: bold;
+	text-align: center;
+  	background: rgb(42, 40, 40);
+	display: block;
+  	height: 100px;
+  	width: 100px;
+  	border-style: ridge;
+	border-radius: 50px;
+}
+.gameGrid section input:hover{
+	cursor: pointer;
+	border-style: outset;
+	width: 100px;
+	height: 100px;
+	border-radius: 75px;
+	transform: scale(1.10);
+	background-color: rgb(109, 100, 100);
+	background-size: contain;
+	background-attachment: fixed;
+	background-position: center;
+}
+#btn1, #btn2{
+	font-weight: bold;
+	border-color: black;
+	background-color: rgb(145, 128, 128);
+	font-size: 15px;
+	border-width: 3px;
+	border-radius: 15px;
+	width: 150px;
+	height: 50px;
+	transition: background 0.75s ease-in-out;
+}
+#btn1:hover, #btn2:hover{
+	cursor: pointer;
+	transform: scale(1.05);
+	background: rgb(171, 167, 167);
+	color: white;
+}
+
+
+
